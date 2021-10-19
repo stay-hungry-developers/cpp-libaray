@@ -7,12 +7,11 @@ project(HelloLibrary)
 file(GLOB SOURCES
     ./include/*.hpp
     ./src/*.cpp
-    ./demo/*.cpp
 )
 
 include_directories("./include/")
 
 message(STATUS "the SOURCES variable is ${SOURCES} !!")
 
-add_executable(HelloLibrary ${SOURCES})
+add_library(HelloLibrary ${SOURCES})
 
