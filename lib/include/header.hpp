@@ -7,7 +7,7 @@ class Cls {
 public:
   Cls();
   ~Cls();
-  void SayHello();
+  double SayHello();
 };
 
 #endif
